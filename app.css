@@ -273,10 +273,4 @@ body {
   .linksBlock {
     grid-column: 1 / span 3;
   }
-
-  .button {
-    grid-gap: 3vw;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
