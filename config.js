@@ -62,9 +62,9 @@ const CONFIG = {
     },
     {
       id: "6",
-      name: "Discord",
-      icon: "bot",
-      link: "https://discord.com/app",
+      name: "Zalo",
+      icon: "message-circle-heart",
+      link: "https://chat.zalo.me/",
     },
   ],
 };
