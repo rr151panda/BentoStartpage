@@ -4,15 +4,15 @@
     --wallpaper: url("/home/Phuoc/Wallpapers/kogecha2.jpg");
 
     /* Special */
-    --background: #0D0B10;
-    --foreground: #bfc0c0;
-    --cursor: #bfc0c0;
+    --background: #0B0000;
+    --foreground: #EDEFEF;
+    --cursor: #EDEFEF;
 
     /* Colors */
-    --color0: #1B1923;
-    --color1: #616B80;
-    --color2: #70B3B4;
-    --color3: #3B7695;
+    --color0: #0B0000;
+    --color1: #492A16;
+    --color2: #283637;
+    --color3: #73766F;
     --color4: #569F54;
     --color5: #A9C370;
     --color6: #EFDFC5;
