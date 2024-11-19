@@ -4,25 +4,25 @@
     --wallpaper: url("/home/Phuoc/Wallpapers/kogecha2.jpg");
 
     /* Special */
-    --background: #0B0000;
-    --foreground: #EDEFEF;
-    --cursor: #EDEFEF;
+    --background: #010000;
+    --foreground: #F0ECE0;
+    --cursor: #F0ECE0;
 
     /* Colors */
-    --color0: #0B0000;
-    --color1: #492A16;
-    --color2: #283637;
-    --color3: #73766F;
-    --color4: #A86950;
-    --color5: #F6C470;
-    --color6: #CCD0D0;
-    --color7: #bfc0c0;
-    --color8: #414242;
-    --color9: #616B80;
-    --color10: #70B3B4;
-    --color11: #3B7695;
-    --color12: #569F54;
-    --color13: #A9C370;
-    --color14: #EFDFC5;
-    --color15: #bfc0c0;
+    --color0: #010000;
+    --color1: #665F54;
+    --color2: #6C766A;
+    --color3: #87806E;
+    --color4: #ABA189;
+    --color5: #A2AE98;
+    --color6: #D3C8A6;
+    --color7: #E1DBCA;
+    --color8: #9D998D;
+    --color9: #665F54;
+    --color10: #6C766A;
+    --color11: #87806E;
+    --color12: #ABA189;
+    --color13: #A2AE98;
+    --color14: #D3C8A6;
+    --color15: #E1DBCA;
 }
