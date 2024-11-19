@@ -46,7 +46,7 @@ const CONFIG = {
       id: "3",
       name: "Blackboard",
       icon: "graduation-cap",
-      link: "https://ole.bris.ac.uk.com",
+      link: "https://ole.bris.ac.uk",
     },
     {
       id: "4",
@@ -62,9 +62,9 @@ const CONFIG = {
     },
     {
       id: "6",
-      name: "Jellyfin",
-      icon: "popcorn",
-      link: "https://movies.milnerbowellserver.xyz/",
+      name: "Homepage",
+      icon: "layout-dashboard",
+      link: "https://dash.milnerbowellserver.xyz/",
     },
   ],
 };
