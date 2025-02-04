@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="0">
   <head>
     <meta charset="UTF-8" />
     <title><3</title>
     <link rel="stylesheet" href="app.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="assets/js/image.js"></script>
   </head>
 
   <!-- 
@@ -34,8 +35,10 @@
       <div class="linksBlock" id="linksBlock"></div>
       <div class="imageBlock" id="imgBlock">
         <img
-          src="assets/img/Lady.png"
+          id="toggleImage"
+          class="shown"
           alt="Dark cityscape"
+          onclick="toggleImage();"
         />
       </div>
       <div class="search-box">
@@ -52,6 +55,7 @@
     <script src="assets/js/layout.js"></script>
     <script src="assets/js/time.js"></script>
     <script src="assets/js/greeting.js"></script>
+    <script>setInitialImage()</script>
 
     <!-- Generators  -->
     <script src="assets/js/buttons.js"></script>

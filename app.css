@@ -156,7 +156,6 @@ body {
 }
 
 .search-box {
-  /*padding: 40px;*/
   background-color: var(--background);
   grid-row: 7 / span 1;
   grid-column: 5 / span 4;
@@ -168,7 +167,7 @@ body {
 
 input[type="text"] {
   display: block;
-  width: 300px; /*20px [ left & Right ] padding + 4px border [ left & Right ] */ 
+  width: 300px;
   font-size: 16px;
   font-weight: 600;
   color: var(--fg);
@@ -268,6 +267,22 @@ input[type="text"]:focus {
   object-fit: cover;
   border-radius: 10px;
   object-position: centre;
+}
+
+.shown {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.hidden {
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  opacity: 0;
 }
 
 .imageBlock img:hover {
