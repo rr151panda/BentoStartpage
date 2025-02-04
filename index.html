@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="app.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="assets/js/image.js"></script>
+    <script src="assets/js/music.js"></script>
+    <script>
+    if(localStorage.getItem("navidromePass") == null) {
+      var pass = prompt("Please enter your Navidrome password:");
+      localStorage.setItem("navidromePass", pass)
+  }</script>
   </head>
 
   <!-- 
@@ -41,6 +47,18 @@
           onclick="toggleImage();"
         />
       </div>
+      <div class="musicBlock" id="musicBlock">
+        <img id="music1"
+        class="musicCover"
+        onclick="setImages()">
+        </img>
+        <img id="music2"
+        class="musicCover">
+        </img>
+        <img id="music3"
+        class="musicCover">
+        </img>
+        </div>
       <div class="search-box">
         <form method="GET" action="https://www.kagi.com/search">
           <input name="q" type="text" placeholder="Search... " name="search">
@@ -56,6 +74,7 @@
     <script src="assets/js/time.js"></script>
     <script src="assets/js/greeting.js"></script>
     <script>setInitialImage()</script>
+    <script>setImages()</script>
 
     <!-- Generators  -->
     <script src="assets/js/buttons.js"></script>
