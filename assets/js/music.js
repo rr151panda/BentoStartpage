@@ -446,7 +446,7 @@ async function generateArtUrl(num) {
     return url
 }
 
-async function setImages() {
+async function setMusicImages() {
     var music1 = document.getElementById("music1");
     var music2 = document.getElementById("music2");
     var music3 = document.getElementById("music3");

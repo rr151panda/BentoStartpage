@@ -1,17 +1,19 @@
 <!doctype html>
-<html lang="en" data-theme="0">
+<html lang="en" theme="cattpuccin" themeIndex="0">
   <head>
     <meta charset="UTF-8" />
     <title><3</title>
     <link rel="stylesheet" href="app.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="assets/js/image.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/music.js"></script>
+    <script src="assets/js/themes-bar.js"></script>
     <script>
     if(localStorage.getItem("navidromePass") == null) {
       var pass = prompt("Please enter your Navidrome password:");
       localStorage.setItem("navidromePass", pass)
   }</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
   </head>
 
   <!-- 
@@ -21,7 +23,23 @@
       -->
 
   <body class="">
-    <div class="container">
+
+<span class="material-symbols-outlined unselectable" onclick="toggleBar()">
+      apps
+</span>
+<div class="themes-bar" id="themes-bar">
+  <div id="header">Themes</div>
+  <div id="themes-buttons">
+    <div class="theme-button unselectable" onclick="setTheme('cattpuccin')">Cattpuccin</div>
+    <div class="theme-button unselectable" onclick="setTheme('tokyo')">Neon Tokyo</div>   
+    <div class="theme-button unselectable" onclick="setTheme('greenify')">Greenify</div>   
+    <div class="theme-button unselectable" onclick="setTheme('oxo')">Oxo Carbon</div>
+    <div class="theme-button unselectable" onclick="setTheme('nord')">Nord</div>
+    <div class="theme-button unselectable" onclick="setTheme('paddy')">Paddy photos</div>
+  </div>
+  </div>
+
+    <div class="container" id="container">
       <!-- Clock and Greetings  -->
 
       <div class="timeBlock">
@@ -44,13 +62,12 @@
           id="toggleImage"
           class="shown"
           alt="Dark cityscape"
-          onclick="toggleImage();"
+          onclick="changeImage();"
         />
       </div>
       <div class="musicBlock" id="musicBlock">
         <img id="music1"
-        class="musicCover"
-        onclick="setImages()">
+        class="musicCover">
         </img>
         <img id="music2"
         class="musicCover">
@@ -74,7 +91,7 @@
     <script src="assets/js/time.js"></script>
     <script src="assets/js/greeting.js"></script>
     <script>setInitialImage()</script>
-    <script>setImages()</script>
+    <script>setMusicImages()</script>
 
     <!-- Generators  -->
     <script src="assets/js/buttons.js"></script>
