@@ -101,6 +101,8 @@ body {
   user-select: none;
 }
 
+/* THEME SWITCHER */
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -171,6 +173,8 @@ body {
   background-color: var(--color2);
   transform: translateY(-5px);
 }
+
+/* GREETING */
 
 .timeBlock {
   grid-row: 1 / span 4;
@@ -243,6 +247,8 @@ body {
   grid-gap: 0 !important;
 }
 
+/* LINKS/BUTTONS */
+
 .linksBlock {
   display: flex;
   grid-row: 5/ span 3;
@@ -303,6 +309,8 @@ body {
   stroke: var(--sfg);
 }
 
+/* IMAGE */
+
 .imageBlock {
   display: grid;
   grid-row: 1 / span 4;
@@ -337,6 +345,8 @@ body {
 .imageBlock img:hover {
   transform: translateY(-1rem);
 }
+
+/* MUSIC COVERS */
 
 .musicBlock {
   display: grid;
@@ -379,6 +389,8 @@ body {
   grid-row: 1/ span 1;
   grid-column: 3 / span 1;
 }
+
+/* SEARCH BAR */
 
 .search-box {
   background-color: var(--background);

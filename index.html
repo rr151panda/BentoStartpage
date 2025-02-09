@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" theme="cattpuccin" themeIndex="0">
+
   <head>
     <meta charset="UTF-8" />
     <title><3</title>
@@ -12,7 +13,8 @@
     if(localStorage.getItem("navidromePass") == null) {
       var pass = prompt("Please enter your Navidrome password:");
       localStorage.setItem("navidromePass", pass)
-  }</script>
+  }
+  </script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps" />
   </head>
 
@@ -24,6 +26,7 @@
 
   <body class="">
 
+<!-- Theme Switcher -->
 <span class="material-symbols-outlined unselectable" onclick="toggleBar()">
       apps
 </span>
@@ -53,10 +56,12 @@
           <div id="day"></div>
         </div>
         <div id="greetings"></div>
-        
       </div>
 
+      <!-- Links -->
       <div class="linksBlock" id="linksBlock"></div>
+
+      <!-- Image -->
       <div class="imageBlock" id="imgBlock">
         <img
           id="toggleImage"
@@ -65,6 +70,8 @@
           onclick="changeImage();"
         />
       </div>
+
+      <!-- Music covers-->
       <div class="musicBlock" id="musicBlock">
         <img id="music1"
         class="musicCover">
@@ -76,11 +83,15 @@
         class="musicCover">
         </img>
         </div>
+
+        <!--Search box-->
       <div class="search-box">
         <form method="GET" action="https://www.kagi.com/search">
           <input name="q" type="text" placeholder="Search... " name="search">
       </form>
       </div>
+
+      
     </div>
 
     <!-- Config  -->

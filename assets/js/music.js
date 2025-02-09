@@ -403,6 +403,7 @@
 
 var pass = localStorage.getItem("navidromePass")
 
+/*Generate random salt*/
 function makeSalt(length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -415,15 +416,17 @@ function makeSalt(length) {
     return result;
 }
 
+/*Generates navidrome API URL from pass+salt*/
 function generateAlbumsUrl() {
     var salt = makeSalt(6);
     var authToken = md5(pass+salt);
-
     var url = "https://music.milnerbowellserver.xyz/rest/getAlbumList?type=recent&size=3&u=paddy&t="+authToken+"&s="+salt+"&v=1.16&c=bento&f=json";
+
     console.log(url);
     return url
 }
 
+/*Fetch API data*/
 async function getAlbumData() {
     try {
         const response = await fetch(generateAlbumsUrl())
@@ -431,12 +434,14 @@ async function getAlbumData() {
             throw new Error('Response status: ${response.status}');
         }
         const json = await response.json();
+
         return json
     } catch (error) {
         console.error(error.message);
     }
 }
 
+/*Generate album art link from API data*/
 async function generateArtUrl(num) {
     var salt = makeSalt(6);
     var authToken = md5(pass+salt);
@@ -446,6 +451,7 @@ async function generateArtUrl(num) {
     return url
 }
 
+/*Set the image sources to album covers*/
 async function setMusicImages() {
     var music1 = document.getElementById("music1");
     var music2 = document.getElementById("music2");
@@ -454,6 +460,7 @@ async function setMusicImages() {
     var art1 = await generateArtUrl(0);
     var art2 = await generateArtUrl(1);
     var art3 = await generateArtUrl(2);
+    
     music1.src = art1
     music2.src = art2
     music3.src = art3

@@ -1,3 +1,4 @@
+/*Lists of the images for each theme*/
 let cattpuccin = [
     'assets/img/aesthetic_deer.png',
     'assets/img/evening_sky.png',
@@ -41,8 +42,7 @@ let paddy = [
     'assets/img/PXL_20240214_090404859.jpg',
 ]
 
-
-
+/*Updates the theme variable*/
 function updateTheme() {
     var selectedTheme = localStorage.getItem("theme")
 
@@ -62,6 +62,7 @@ function updateTheme() {
     return theme
 }
 
+/*Sets the image and theme on page load*/
 function setInitialImage() {
     var theme = updateTheme()
 
@@ -73,18 +74,20 @@ function setInitialImage() {
     }
 
     var imgElement = document.getElementById('toggleImage');
+
     imgElement.src = theme[localStorage.getItem("imageNumber")]
+
     document.querySelector("html").setAttribute("themeIndex", localStorage.getItem("imageNumber"))
     document.querySelector("html").setAttribute("theme", localStorage.getItem("theme"))
 }
 
+/*Changes the image when clicked*/
 function changeImage() {
     var imgElement = document.getElementById('toggleImage');
-
     var i = localStorage.getItem("imageNumber")
-
     var theme = updateTheme()
 
+    /*For final image in list*/
     if (i == (theme.length-1)) {
         imgElement.classList.toggle('hidden')
         setTimeout(function() {
@@ -94,6 +97,8 @@ function changeImage() {
             document.querySelector("html").setAttribute("themeIndex", i)
             imgElement.classList.toggle('hidden');
         }, 500);
+
+        /*For all other images*/
     } else {
         imgElement.classList.toggle('hidden')
         setTimeout(function() {
@@ -107,6 +112,7 @@ function changeImage() {
     }
  }
 
+ /*Updates the image whn the theme is changed*/
  function updateImage() {
     var theme = updateTheme()
     var imgElement = document.getElementById("toggleImage")
@@ -114,6 +120,7 @@ function changeImage() {
     imgElement.src = theme[0]
  }
 
+ /*Changes the theme*/
  async function setTheme(theme) {
     await localStorage.setItem("theme", theme);
     document.querySelector("html").setAttribute("theme", theme);
