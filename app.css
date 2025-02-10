@@ -455,3 +455,49 @@ input[type="text"]:focus {
     grid-column: 1 / span 8;
   }
 }
+
+@media screen and (max-aspect-ratio: 0.5 ) {
+  .container {
+    grid-gap: 20px;
+    padding: 40px;
+    margin-top: -250px;
+  }
+
+  .timeBlock {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 8;
+  }
+
+  #month,
+  #day {
+    font-size: 5vh;
+  }
+
+  .weatherBlock {
+    display: none;
+  }
+
+  .search-box {
+    grid-row: 7 /span 1;
+  }
+
+  input[type="text"] {
+    font-size: 1vh;
+  }
+
+  .imageBlock {
+    display: none;
+  }
+
+  .musicBlock {
+    display: none;
+  }
+
+  .linksBlock {
+    grid-row: 4 /span 3;
+  }
+
+  .themes-bar {
+    display: none;
+  }
+}
