@@ -456,7 +456,7 @@ input[type="text"]:focus {
   }
 }
 
-@media screen and (max-aspect-ratio: 0.5 ) {
+@media screen and (max-aspect-ratio: 10/16 ) {
   .container {
     grid-gap: 20px;
     padding: 40px;
