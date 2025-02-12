@@ -9,6 +9,7 @@
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/music.js"></script>
     <script src="assets/js/themes-bar.js"></script>
+    <script src="assets/js/buttons.js"></script>
     <script>
     if(localStorage.getItem("navidromePass") == null) {
       var pass = prompt("Please enter your Navidrome password:");
@@ -59,7 +60,61 @@
       </div>
 
       <!-- Links -->
-      <div class="linksBlock" id="linksBlock"></div>
+      <div class="linksBlock" id="linksBlock">
+        <div class="buttonsContainer buttons1" id="buttons_1">
+            <a href="https://youtube.com"
+            class="card button button__1">
+            <i class="buttonIcon" icon-name="youtube"></i>
+          </a>
+          <a href="https://floatplane.com"
+            class="card button button__2">
+            <i class="buttonIcon" icon-name="plane"></i>
+          </a>
+          <a href="https://info.milnerbowellserver.xyz"
+            class="card button button__3">
+            <i class="buttonIcon" icon-name="file-text"></i>
+          </a>
+          <a href="https://ole.bris.ac.uk"
+            class="card button button__4">
+            <i class="buttonIcon" icon-name="graduation-cap"></i>
+          </a>
+          <a href="music.milnerbowellserver.xyz"
+            class="card button button__5">
+            <i class="buttonIcon" icon-name="disc-3"></i>
+          </a>
+          <a href="https://movies.milnerbowellserver.xyz"
+            class="card button button__6">
+            <i class="buttonIcon" icon-name="clapperboard"></i>
+          </a>
+
+        </div>
+        <div class="buttonsContainer buttons2 hidden" id="buttons_2">
+          <a href="https://dropout.tv"
+          class="card button button__1">
+          <i class="buttonIcon" icon-name="laugh"></i>
+        </a>
+        <a href="https://slsk.milnerbowellserver.xyz"
+          class="card button button__2">
+          <i class="buttonIcon" icon-name="bird"></i>
+        </a>
+        <a href="https://requests.milnerbowellserver.xyz"
+          class="card button button__3">
+          <i class="buttonIcon" icon-name="cloud-download"></i>
+        </a>
+        <a href="https://photos.milnerbowellserver.xyz"
+          class="card button button__4">
+          <i class="buttonIcon" icon-name="aperture"></i>
+        </a>
+        <a href="lidarr.milnerbowellserver.xyz"
+          class="card button button__5">
+          <i class="buttonIcon" icon-name="file-music"></i>
+        </a>
+        <a href="https://dash.milnerbowellserver.xyz"
+          class="card button button__6">
+          <i class="buttonIcon" icon-name="layout-dashboard"></i>
+        </a>
+      </div>
+      </div>
 
       <!-- Image -->
       <div class="imageBlock" id="imgBlock">
@@ -74,12 +129,14 @@
       <!-- Music covers-->
       <div class="musicBlock" id="musicBlock">
         <img id="music1"
+        onclick="buttons1()"
         class="musicCover">
         </img>
         <img id="music2"
         class="musicCover">
         </img>
         <img id="music3"
+        onclick="buttons2()"
         class="musicCover">
         </img>
         </div>
@@ -105,7 +162,7 @@
     <script>setMusicImages()</script>
 
     <!-- Generators  -->
-    <script src="assets/js/buttons.js"></script>
+    
     <!-- Icons -->
     <script>
       lucide.createIcons();

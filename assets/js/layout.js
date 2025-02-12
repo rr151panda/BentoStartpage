@@ -4,9 +4,9 @@
 // Generate Layout.
 
 const generateLayout = () => {
-  let firstButtonsContainer = `
+  /*let firstButtonsContainer = `
     <div class="buttonsContainer" id="buttons_1"></div>
-  `;
+  `;*/
   let secondButtonsContainer = `
     <div class="buttonsContainer" id="buttons_2"></div>
   `;
@@ -22,7 +22,7 @@ const generateLayout = () => {
 
   switch (CONFIG.bentoLayout) {
     case "bento":
-      linksBlock.insertAdjacentHTML(position, firstButtonsContainer);
+      /*linksBlock.insertAdjacentHTML(position, firstButtonsContainer);*/
       linksBlock.classList.remove("reduceGap");
       linksBlock.classList.remove("removeGap");
       break;
@@ -38,7 +38,7 @@ const generateLayout = () => {
       linksBlock.classList.add("reduceGap");
       break;
     case "buttons":
-      linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);
+      /*linksBlockLeft.insertAdjacentHTML(position, firstButtonsContainer);*/
       linksBlockRight.insertAdjacentHTML(position, secondButtonsContainer);
       linksBlock.classList.add("removeGap");
       break;
