@@ -430,13 +430,13 @@ input[type="text"] {
   color: var(--fg);
   padding: 6px;
   padding-right: 2px;
-  border: 8px solid var(--color2);
+  border: 6px solid var(--color2);
   border-radius: 100px;
   background-color: var(--background);
 }
 
 input[type="text"]:focus {
-  outline: 10px solid var(--color4);
+  outline: 6px solid var(--color4);
   border-radius: 16px;
 }
 
